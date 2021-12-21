@@ -1,0 +1,138 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  font-size: 15px;
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+/* defaults */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-color: var(--background-headings-buttons);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: var(--background-headings-buttons);
+  font-size: 2.25rem;
+}
+
+p{
+  color: var(--paragraphs);
+  font-family: 'Lexend Deca display', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+.card{
+flex: 1;
+width: 300px;
+height: 500px;
+justify-content: center;
+align-items: center;
+padding: 50px;
+}
+
+.card-icon {
+  min-height: 1em;
+  width: 54px;
+  min-width: 20px;
+  margin-bottom: 30px;
+}
+
+.card-title{
+margin-bottom: 30px;
+}
+
+.card-text{
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-btn{
+ font-family: 'Big Shoulders Display', sans-serif;
+ background-color: var(--background-headings-buttons);
+ border: none;
+ border-radius: 50px;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ margin-top: 75px;
+ letter-spacing: 1px;
+}
+
+.top{
+  background-color: var(--Bright-orange);
+}
+
+.middle{
+  background-color: var(--Dark-cyan);
+}
+
+.bottom{
+  background-color: var(--Very-dark-cyan);
+}
+
+.top-btn{
+  color: var(--Bright-orange);
+}
+
+.middle-btn{
+  color: var(--Dark-cyan);
+}
+
+.bottom-btn{
+  color: var(--Very-dark-cyan);
+}
+
+.top-btn :hover{
+  background-color: var(--Bright-orange) ;
+  color: var(--background-headings-buttons);
+  border: 2px solid var(--background-headings-buttons);
+}
+
+.middle-btn:hover{
+  background-color: var(--Dark-cyan) ;
+  color: var(--background-headings-buttons);
+  border: 2px solid var(--background-headings-buttons);
+}
+
+.bottom-btn:hover{
+  background-color: var(--Very-dark-cyan) ;
+  color: var(--background-headings-buttons);
+  border: 2px solid var(--background-headings-buttons);
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+  .container {
+    flex-direction: column;
+  }
