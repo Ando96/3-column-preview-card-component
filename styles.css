@@ -136,3 +136,8 @@ margin-bottom: 30px;
   .container {
     flex-direction: column;
   }
+
+  .card-btn{
+    margin-top: 25px;
+  }
+}
